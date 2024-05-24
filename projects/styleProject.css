@@ -65,7 +65,6 @@ nav ul li a:active{
 /*PORTFÓLIO*/
 .portfólio{
     background-color: #2B2B2B;
-    padding: 5%;
 }
 
 .title{
@@ -73,7 +72,7 @@ nav ul li a:active{
     font-size: 50px;
     text-align: center;
     letter-spacing: 1px;
-    margin-bottom: 4rem;
+    margin: 2rem;
 }
 
 .ponto{
@@ -85,6 +84,7 @@ nav ul li a:active{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2,5rem;
+    padding: 0 2.5rem 2.5rem;
 }
 
 .box{
