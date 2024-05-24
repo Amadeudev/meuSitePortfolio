@@ -79,7 +79,7 @@ nav ul li a:active{
 #container-habilidades{
     background-color: #2B2B2B;
     width: 100%;
-    margin-block-end: 2.5rem;
+    padding-block-end: 2.5rem;
 }
 
 .caixa{
