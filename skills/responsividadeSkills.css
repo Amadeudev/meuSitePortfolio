@@ -1,0 +1,37 @@
+@media only screen and (max-width: 700px) {
+/*SECTION DE NAV*/
+    .logo {
+        max-width: 10%;
+    }
+
+    .nome {
+        display: none;
+    }
+
+
+/*SECTION DE HABILIDADES*/
+    .title{
+        font-size: 30px;
+    }
+
+    #containerHabilidades{
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .caixa{
+        text-align: center;
+        flex-direction: column;
+        
+    }
+
+/*SECTION FOOTER*/
+    .end {
+        font-size: 10px;
+    }
+
+    .logoEnd {
+        max-width: 4%;
+    }
+}
