@@ -10,10 +10,6 @@ body {
     background-color: #2B2B2B;
 }
 
-#tudo {
-    background-image: url(assets\Imagens\download.jpg);
-}
-
 .nome{
 	color: #e5e5e5 ;
 	margin-left: 10px;
@@ -73,7 +69,7 @@ nav ul li a:active{
 }
 
 .descrição{
-    margin-top: 35px;
+    margin-top: 2rem;
     color: #828282;
     font-size: 16px;
     letter-spacing: 1px;
@@ -128,7 +124,7 @@ nav ul li a:active{
     margin-top: 9%;
 }
 
-#sobremim{
+#sobreMim{
     color: #e5e5e5;
     position:relative;
     text-align: center;
@@ -225,7 +221,7 @@ hr {
     font-size: 14px ;
 }
 
-.logo-end{
+.logoEnd{
     max-width: 2%;
     margin-right: 5%;
 }
