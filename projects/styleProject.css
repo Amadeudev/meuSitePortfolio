@@ -131,6 +131,16 @@ nav ul li a:active{
     transform: scale(1.1);
 }
 
+.linkProjeto {
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkProjeto:hover {
+    color: #e5e5e5;
+    transform: scale(1.1);
+}
+
 
 /*FOOTER*/
 #copy{
