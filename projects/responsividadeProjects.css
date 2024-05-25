@@ -7,24 +7,10 @@
     .nome {
         display: none;
     }
+}
 
+/*SECTION PROJETOS*/
 
-/*SECTION DE HABILIDADES*/
-    .title{
-        font-size: 30px;
-    }
-
-    #containerHabilidades{
-        align-items: center;
-        text-align: center;
-
-    }
-
-    .caixa{
-        text-align: center;
-        flex-direction: column;
-        
-    }
 
 /*SECTION FOOTER*/
     footer{
@@ -41,4 +27,3 @@
     .logoEnd {
         max-width: 4%;
     }
-}
