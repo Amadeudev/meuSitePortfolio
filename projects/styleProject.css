@@ -83,7 +83,7 @@ nav ul li a:active{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 2,5rem;
+    gap: 2.5rem;
     padding: 0 2.5rem 2.5rem;
 }
 
