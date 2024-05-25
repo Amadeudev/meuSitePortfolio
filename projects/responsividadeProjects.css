@@ -10,16 +10,16 @@
 }
 
 /*SECTION PROJETOS*/
-
-
-/*SECTION FOOTER*/
-    footer{
-        margin: auto;
-        width: 100%;
-        bottom: 0;
-        position: fixed;
+    .title{
+        font-size: 30px;
     }
 
+    .projetos{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*SECTION FOOTER*/
     .end {
         font-size: 10px;
     }
