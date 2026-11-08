@@ -3,7 +3,7 @@
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Ano automático no rodapé ---------- */
+  /* ---------- Ano automático ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
@@ -105,7 +105,7 @@
     sections.forEach((section) => sectionObserver.observe(section));
   }
 
-  /* ---------- Projetos: rolagem contínua ao passar o mouse nas bordas ---------- */
+  /* ---------- Projetos ---------- */
   const carousel = document.getElementById('projectsCarousel');
   const track = document.getElementById('projectsTrack');
 
