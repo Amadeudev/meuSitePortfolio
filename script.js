@@ -24,11 +24,6 @@
   function typeSnippet() {
     if (!typedEl) return;
 
-    if (prefersReducedMotion) {
-      typedEl.textContent = snippet;
-      return;
-    }
-
     let index = 0;
     const step = () => {
       typedEl.textContent = snippet.slice(0, index);
@@ -40,6 +35,7 @@
     };
     setTimeout(step, 600);
   }
+
 
   typeSnippet();
 
