@@ -1,66 +1,385 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <html lang="pt-BR">
-    <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home/estilo.css">
-	<link rel="stylesheet" href="./home/responsividadeHome.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <title>PORTFÓLIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amadeu Fernandes | Desenvolvedor Web Full Stack & Automações</title>
+  <meta name="description" content="Portfólio de Amadeu Fernandes, desenvolvedor web full stack e automações, estudante de Ciência da Computação na UFMA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header id="menu">
-		<nav>
-			<img class="logo" src="./assets/Imagens/LOGO AMADEU.png">
-			<h1 class="nome">Amadeu<p class="sobrenome">Fernandes</p></h1>
-			<ul id="lista">
-				<li><a href="#tudo">Home</a></li>
-				<li><a href="./skills/skills.html">Habilidades</a></li>
-				<li><a href="./projects/projects.html">Projetos</a></li>
-			</ul>
-		</nav>
-	</header>
 
-	<main>
-		<section class="apresentação">
-			<div>
-				<h1>Buscando desenvolvimento em uma era de <span class="presença">presença digital</span> e modernidade.</h1>
-				<h3 class="descrição">Desenvolvedor Front-End em progesso, visando aprender cada vez mais, para auxíliar você e sua marca a encontrarem o caminho para o alto padrão.</h3>
-				<a href="https://github.com/Amadeudev" target="_blank"><button class="botaoAcesso"><i class="bi bi-github" id="gitHub"></i>GitHub</button></a>
-				<a href="https://www.linkedin.com/in/amadeu-f-684340231/" target="_blank"><button class="botaoAcesso"><i class="bi bi-linkedin" id="linkedin"></i>LinkedIn</button></a>
-			</div>
-			<div>
-				<img id="imagemPessoal" src="assets\Imagens\Imagem1.png">
-			</div>
-		</section>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+  <div class="bg-grid" aria-hidden="true"></div>
 
-		<section id="second">
-			<div id="sobreMim">
-				<h2 class="title">Quem sou?</h2>
-				<h4 class="eu">Me chamo Amadeu Fernandes e atualmente sou um Desenvolvedor Front-End em progresso, Designer UI e Designer Gráfico. Busco desenvolvimento na área da programação, mantendo o foco no desenvolvimento Front-End, com destaque à linguagem de marcação HTML e a linguagem Cascading Style Sheet (CSS) e a Linguagem de programação Javascript. Ademais, possuo experiência nos softwares de Design Gráfico Adobe Photoshop, Adobe Illustrator, Adobe InDesign e o editor gráfico Figma.</h4>
-			</div>
-		</section>
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand" aria-label="Início">
+        <img src="assets/Imagens/LOGO%20AMADEU.png" alt="Logo Amadeu" class="logo">
+        <span>amadeu<span class="brand-dot">.</span>dev</span>
+      </a>
 
-		<section id="contato">
-				<h6>Amadeu Fernandes</h6>
-				<p>CONTATOS</p>
-			<div class="Redes-sociais">
-				<a href="https://contate.me/amadeufernandesdesigner" target="_blank"><i class="bi bi-whatsapp"></i></a>
-				<a href="https://www.instagram.com/fernandes.a_designer?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="bi bi-instagram"></i></a>
-				<a href="https://www.behance.net/amadeufernandes" target="_blank"><i class="bi bi-behance"></i></a>
-			</div><!--Redes-sociais-->
-		</section>
-	</main>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-	<footer>	
-		<hr></hr>
-		<div id="copy">
-			<p class="end">CopyRight © 2023 / <span class="azul">Amadeu Fernandes</span></p>
-			<img class="logoEnd" src="assets/Imagens/LOGO AMADEU.png">
-		</div>
-	</footer>
-	
-	<script src="./home/main.js"></script>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato" class="nav-cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <section id="inicio" class="hero container">
+      <div class="hero-text">
+        <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Disponível para estudos e projetos</span>
+        <h1>Amadeu Fernandes</h1>
+        <p class="role">Desenvolvimento Full-Stack &amp; Automações</p>
+        <p class="lead">
+          Crio interfaces e automatizo processos para que o seu trabalho fique mais simples, rápido e confiável.
+        </p>
+        <div class="hero-actions">
+          <a href="https://github.com/Amadeudev" target="_blank" class="btn btn-primary">Ver todos os projetos</a>
+          <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+          <em>dev.js</em>
+        </div>
+        <pre class="terminal-body" id="typed"></pre>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-main reveal">
+            <span class="section-label">01 / sobre</span>
+            <h2>Computação aplicada à problemas reais</h2>
+            <div class="about-text">
+              <p>
+                Sou estudante de Ciência da Computação na Universidade Federal do Maranhão,
+                desenvolvedor de automações, integrações e Dev Full-Stack. 
+                Gosto de transformar ideias em aplicações que funcionam bem
+                para quem usa e são fáceis de manter para quem constrói.
+              </p>
+              <p>
+                Meu trabalho vai do planejamento à entrega: modelagem de dados, APIs REST,
+                interfaces responsivas e scripts de automação. Também atuo com ensino e
+                divulgação da área, explicando conceitos em aulas e oficinas.
+              </p>
+            </div>
+          </div>
+
+          <aside class="info-card reveal">
+            <h3>// resumo</h3>
+            <ul>
+              <li><span>Localização</span>São Luís, MA</li>
+              <li><span>Formação</span>Bacharelado em Ciência da Computação (UFMA)</li>
+              <li><span>Áreas de Interesse</span>Automação de Sistemas · Engenharia de Software</li>
+              <li><span>Foco</span>Desenvolvimento Full-Stack - IA - Automações</li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIÊNCIA ========== -->
+    <section id="experiencia" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">02 / experiência</span>
+          <h2>Trajetória</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-badge">Atual</span>
+            <h3>Estagiário em Automação e Integração de Sistemas</h3>
+            <p class="timeline-org">Nia.tech - Tecnologia para Negócios Imobiliários</p>
+            <ul>
+              <li>Desenvolvo automações e integrações de sistemas no Make para empresas do setor imobiliário.</li>
+              <li>Configuro e personalizo o Bitrix24 para organizar funis, cards e fluxos de atendimento a clientes e negócios imobiliários.</li>
+              <li>Dou suporte e manutenção aos fluxos integrados, buscando reduzir tarefas manuais e aumentar a confiabilidade dos processos.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <h3>Estagiário em Automação e Desenvolvimento</h3>
+            <p class="timeline-org">Enovarcred Soluções Financeiras</p>
+            <ul>
+              <li>Desenvolvimento e manutenção de sistemas internos para automação de processos operacionais.</li>
+              <li>Implementação de integrações entre sistemas por meio de APIs REST, realizando consumo de serviços, tratamento de dados e comunicação entre plataformas.</li>
+              <li>Análise, desenvolvimento e manutenção de soluções de software, participando da implementação de novas funcionalidades e da correção de erros em aplicações internas.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <h3>Aluno Bolsista · Desenvolvedor Front-End</h3>
+            <p class="timeline-org">Programa de Educação Tutorial (PETComp)</p>
+            <ul>
+              <li>Desenvolvi juntamente da equipe do programa, web sites, landing pages e aplicações web para clientes dentro da cidade de São Luís.</li>
+              <li>Desenvolvi e conduzi projetos de pesquisa, junto da identificação de problemas, formulação de hipóteses, coleta e análise de dados.</li>
+              <li>Junto de toda a equipe, organizei e participei de eventos e palestras, promovendo a Computação para a comunidade em geral.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <h3>Voluntário Full-Stack</h3>
+            <p class="timeline-org">Instituto Programadores do Amanhã</p>
+            <ul>
+              <li>Desenvolvi APIs REST e aplicações web full stack utilizando Node.js, Express e React, aplicando boas práticas de arquitetura.</li>
+              <li>Participei de todas as etapas do ciclo de desenvolvimento de software, desde o levantamento de requisitos e planejamento até a implementação, testes, documentação e entrega das soluções.</li>
+              <li> Desenvolvi soluções seguindo o padrão de arquitetura cliente-servidor, realizando integração entre front-end e back-end por meio de APIs.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">03 / projetos</span>
+          <h2>Projetos selecionados</h2>
+        </div>
+
+        <div class="carousel" id="projectsCarousel">
+          <div class="carousel-track" id="projectsTrack">
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets\Imagens\erica_fisio.jpeg" alt="Captura de tela do projeto SustenTech">
+              </div>
+              <span class="project-index">01</span>
+              <h3>Site Oficial - Fisioterapeuta Érica</h3>
+              <p>Landing Page para uma Fisioterapeuta.</p>
+              <a href="https://github.com/Amadeudev/landing_erica_fisio" target="_blank" class="project-link">Ver projeto →</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets\Imagens\onfly.jpeg" alt="Captura de tela da tela de cadastro">
+              </div>
+              <span class="project-index">02</span>
+              <h3>Aplicação Web para Hackaton</h3>
+              <p>A solução tem como objetivo permitir a classificação de hospedagens com base em parâmetros pré-definidos pelos usuários.</p>
+              <a href="https://github.com/Amadeudev/Game_Aventura_do_Explorador" target="_blank" class="project-link">Ver projeto →</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets\Imagens\sustentech.jpeg" alt="Captura de tela do Quiz">
+              </div>
+              <span class="project-index">03</span>
+              <h3>Site Sustentech</h3>
+              <p>Projeto de uma plataforma de blog dedicada à conscientização sobre a sustentabilidade na Amazônia. Projeto Final dos Programadores do Amanhã.</p>
+              <a href="https://github.com/Jamyle-Elen/Projeto_final-M2" target="_blank" class="project-link">Ver projeto →</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets\Imagens\portfolio.jpg" alt="Captura de tela da tela de cadastro">
+              </div>
+              <span class="project-index">04</span>
+              <h3>Game - Aventura do Explorador</h3>
+              <p>Um jogo desenvolvimento utilizando Java para uma disciplina do curso de Ciência da Computação.</p>
+              <a href="https://github.com/Amadeudev/Game_Aventura_do_Explorador" target="_blank" class="project-link">Ver projeto →</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb placeholder">
+                <img src="assets\Imagens\portfolio.jpg" alt="Captura de tela da tela de cadastro">
+              </div>
+              <span class="project-index">06</span>
+              <h3>EM BREVE</h3>
+              <p>EM BREVE, NOVOS PROJETOS.</p>
+              <a href="https://github.com/Amadeudev" target="_blank" class="project-link">Ver projeto →</a>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TECNOLOGIAS ========== -->
+    <section id="tecnologias" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">04 / stack</span>
+          <h2>Tecnologias e ferramentas</h2>
+        </div>
+
+        <div class="chips reveal">
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Make</span>
+          <span class="chip">Python</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">n8n</span>
+          <span class="chip">Figma</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMAÇÃO e CURSOS EXTRAS ========== -->
+    <section id="formacao" class="section">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="section-label">05 / formação</span>
+          <h2>Formação e cursos</h2>
+        </div>
+
+        <div class="edu-grid">
+
+          <article class="edu-card reveal">
+            <h3>Bacharelado em Ciência da Computação</h3>
+            <p class="timeline-org">Universidade Federal do Maranhão · 08/2024 – Atual</p>
+            <p class="edu-text">
+              A Ciência da Computação estuda como problemas são representados, resolvidos e
+              executados por máquinas. Vai da teoria dos algoritmos até a construção de sistemas
+              reais, passando por linguagens, dados e redes.
+            </p>
+            <h4 class="edu-subtitle">O que estou estudando</h4>
+            <ul class="edu-topics">
+              <li>Algoritmos e estruturas de dados</li>
+              <li>Programação e paradigmas de linguagens</li>
+              <li>Banco de dados e modelagem relacional</li>
+              <li>Engenharia de software e práticas ágeis</li>
+              <li>Redes e desenvolvimento para a web</li>
+            </ul>
+          </article>
+
+          <article class="edu-card reveal">
+            <h3>Cursos extras</h3>
+            <p class="timeline-org">Formação complementar</p>
+            <ul class="course-list">
+              <li>
+                <div>
+                  <strong>Desenvolvimento Front-End</strong>
+                  <small>Inova Maranhão + Alura</small>
+                </div>
+                <span>180h</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Web Design</strong>
+                  <small>Inova Maranhão + Alura</small>
+                </div>
+                <span>180h</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Design Gráfico</strong>
+                  <small>Information Bacabal</small>
+                </div>
+                <span>100h</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Informática Básica</strong>
+                  <small>Information Bacabal</small>
+                </div>
+                <span>100h</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Formação Full Stack</strong>
+                  <small>Programadores do Amanhã</small>
+                </div>
+                <span>720h</span>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="section contact">
+      <div class="container">
+        <div class="section-head centered">
+          <h2>Vamos construir algo juntos?</h2>
+          <p class="contact-sub">Aberto a oportunidades, projetos freelance e colaborações.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn contact-btn email" href="mailto:amadeuneto1618@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 6-10 7L2 6"/>
+            </svg>
+            Email
+          </a>
+
+          <a class="btn contact-btn linkedin" href="https://www.linkedin.com/in/amadeufdev/" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            LinkedIn
+          </a>
+
+          <a class="btn contact-btn github" href="https://github.com/Amadeudev" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            GitHub
+          </a>
+
+          <a class="btn contact-btn instagram" href="https://www.instagram.com/amadeu_fernandess" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Amadeu Fernandes</span>
+      <span class="footer-note">SÃO LUÍS - MA</span>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"55d6c902a8a143b1ab6c5051b2a1f75b","spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
